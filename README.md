@@ -19,7 +19,12 @@ Solution: Allow these values to be dynamically calculated or input based on diff
 Solution: Make the deduction calculations modular so that adding new deductions doesn't require touching the main function every time.
 
 ## General Fixes:
-  + asd
-  + asd
-  + asd
-  + asd
+Modular Functions: Each deduction calculation is now handled by its own function (calculate_sss, calculate_philhealth, etc.). This makes the code more modular and easier to update if deduction rules change.
+
+Dynamic Input Handling: The get_salary_input() function ensures that the salary entered by the user is a positive number and is valid. It uses a try-except block to handle invalid inputs.
+
+Error Handling: The input function now catches errors (e.g., entering a non-numeric value) and prompts the user to try again.
+
+Improved Naming: Function names are more descriptive, and variable names are self-explanatory.
+
+No Code Duplication: Each deduction is calculated in its own function, which reduces duplication and makes the code easier to maintain and extend.
